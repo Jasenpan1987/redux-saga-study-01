@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // var stuff = "<h3><a href='hello'></a></h3><h3><a href='hello'></a></h3><h3><a href='hello'></a></h3>"
+        // var myRegex = /(<h3>(.*?)<\/h3>)/g;
+        // var matches = myRegex.test(myRegex);
+
+
+        var regex = /\[(.*?)\]/g;
+        var strToMatch = "This is a test string [more or less], [hello and world]";
+        var matched = regex.exec(strToMatch);
+
+        console.log(matched)
+    </script>
+</body>
+</html>
